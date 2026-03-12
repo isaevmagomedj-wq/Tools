@@ -1,0 +1,21 @@
+from rest_framework import serializers
+
+from .models import Category, Tools, FeedBack
+
+class CategorySerializer(serializers.ModelSerializer):
+    class Meta:
+        fields = '__all__'
+
+        model = Category
+
+class ToolsSerializer(serializers.ModelSerializer):
+    class Meta:
+        fields = '__all__'
+
+        model = Tools
+
+class FeedBackSerializer(serializers.ModelSerializer):
+    class Meta:
+        fields = '__all__'
+
+        model = FeedBack
